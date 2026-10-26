@@ -2,7 +2,9 @@
 
 A topic-focused (vertical) search engine built end to end: a polite, multithreaded **focused web crawler**, a **merged Elasticsearch index** shared across a team, **link analysis** (PageRank and HITS) on the crawled web graph, a **web interface for relevance assessment**, and a from-scratch **`trec_eval` reimplementation** for scoring retrieval quality.
 
-Built for CS6200 *Information Retrieval* at Northeastern University (Spring 2024).
+Built for CS 4200 *Information Retrieval* at Northeastern University (Spring 2024).
+
+> **Note on AI use:** Claude (an AI assistant) was used only to organize my original homework files into this GitHub project. That meant restructuring the folders, moving credentials into environment variables, small path and cleanup fixes, and writing this README. The search engine itself (crawler, indexing, link analysis, assessment app and evaluator) is my own coursework.
 
 ![Relevance assessment interface](docs/images/assessment-ui.png)
 
@@ -120,4 +122,4 @@ Elasticsearch connection settings are read from `.env`. Set `ES_CLOUD_ID`/`ES_PA
 - PageRank scores on the crawl graph are not normalized to sum to 1. The ranking order is still meaningful, but the raw values are not.
 
 ## Acknowledgements
-This was a team project in CS6200 at Northeastern University. Each member crawled part of the topic, and we merged our crawls into one shared index and pooled our relevance judgments. This repository contains my own components: the crawler, the merge script, link analysis, the assessment app and the evaluator.
+This was a team project in CS 4200 at Northeastern University. Each member crawled part of the topic, and we merged our crawls into one shared index and pooled our relevance judgments. This repository contains my own components: the crawler, the merge script, link analysis, the assessment app and the evaluator.
