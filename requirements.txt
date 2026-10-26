@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+url-normalize
+elasticsearch7
+tqdm
+flask
+python-dotenv
